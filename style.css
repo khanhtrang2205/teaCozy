@@ -1,0 +1,154 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+}
+
+/* Styles for the header */
+header {
+  top: 0;
+  left: 0;
+  width: -webkit-fill-available;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 19px;
+  z-index: 1000; /* Ensures the header is on top of other content */
+  border-bottom: 1px solid seashell;
+}
+
+/* Styles for the logo */
+header .logo img {
+  height: 50px;
+}
+
+/* Styles for the navigation links */
+.sub-link {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header .sub-link a {
+  color: seashell;
+  text-decoration: underline;
+}
+
+#banner {
+  position: relative;
+  max-width: 100%;
+  height: 700px;
+  background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+
+#banner .heading {
+  padding: 10px 10px;
+  background-color: black;
+  color: seashell;
+  width: 1200px;
+  text-align: center;
+}
+
+/*Style for the product introduce text*/
+.product-heading {
+  text-align: center;
+  padding: 10px 10px;
+  color: seashell;
+}
+
+/* Container for the product grid */
+.product-grid {
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/* Individual product item */
+.product-item {
+  width: 300px;
+  text-align: center;
+  margin: 10px;
+}
+
+/* Image within the product item */
+.product-image {
+  width: 300px;
+  height: 200px;
+  object-fit: cover; /* Maintain aspect ratio while covering the container */
+}
+
+/* Caption text below the image */
+.caption {
+  margin-top: 10px;
+  font-weight: bold;
+  color: seashell;
+}
+
+/* Location styles*/
+#locations {
+  margin: 0;
+  padding: 10px 0;
+  background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  color: seashell;
+}
+
+.locations-container {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-gap: 40px;
+  justify-content: center;
+  padding: 40px;
+}
+
+.column {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  opacity: 1;
+}
+
+.locations-heading {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+/*Contact information style*/
+#contacts {
+  height: 200px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/*Footer style*/
+footer {
+  color: white;
+  text-align: left;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
